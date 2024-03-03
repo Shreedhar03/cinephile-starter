@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Lexend";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +15,81 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.theme{
+  color: #f2690d;
+}
+.theme-bg{
+  background-color: #f2690d;
+}
+button{
+  outline: none;
+  border: 0;
+  background-color: #f2690d;
+  padding: 8px 16px; 
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+nav{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  max-width: 1200px;
+  margin: auto;
+  position: sticky;
+  top:0;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+li{
+  list-style: none;
+  cursor: pointer;
+}
+input[type="text"]{
+  background-color: #eaeaea;
+  outline: none;
+  border: 0;
+  padding: 10px 20px; 
+  border-radius: 10px;
+}
+.info-container p{
+  font-size: 24px;
+}
+.details-container,
+.movies-container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+.movie-card{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.movie-card img{
+  width:100%;
+  height: 230px;
+  object-fit: cover;
+}
+.details-container img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+.details-container section{
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px ;
+  align-items: start;
 }
